@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:id="@+id/animal_layout">
+
+    <LinearLayout
+        android:id="@+id/description_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:alpha="1"
+        android:background="@drawable/layout_style"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+        <TextView
+            android:id="@+id/description_string"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+            android:textColor="@color/color_black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/go_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@android:color/transparent"
+        android:text="@string/go_back_arrow"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/bQuest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/chief"
+
+        android:textColor="@color/color_black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/bQuest"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bQuest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="32dp"
+
+        android:layout_marginEnd="8dp"
+
+        android:text="@string/b_quest"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50sp"
+        app:fontFamily="@font/chewy"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_top" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:fontFamily="@font/chewy"
+        android:text="@string/animals"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/bQuest" />
+
+    <Button
+        android:id="@+id/option_done_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_style"
+        android:text="@string/done"
+
+        android:textColor="@color/text_button_color"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/option_done_button"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:gravity="center|center_vertical"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/quest_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="Kiss a dog"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="49dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="16dp"
+
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/can_i_eat_it"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="16dp"
+
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/does_it_swim"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="16dp"
+
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="Miaw"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="Feed the birds"
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp"
+                    tools:layout_editor_absoluteY="538dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75569046" />
+
+
+</android.support.constraint.ConstraintLayout>

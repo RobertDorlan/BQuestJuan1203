@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <Button
+        android:id="@+id/go_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@android:color/transparent"
+        android:text="@string/go_back_arrow"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/bQuest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/chief"
+
+        android:textColor="@color/color_black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/bQuest"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bQuest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginEnd="8dp"
+
+        android:text="@string/b_quest"
+        android:textAlignment="center"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50sp"
+        app:fontFamily="@font/chewy"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_1"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_top" />
+
+    <TextView
+        android:id="@+id/quest_1_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/quest_1"
+        android:textAlignment="center"
+        android:textColor="@color/color_black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_2"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_1" />
+
+    <TextView
+        android:id="@+id/quest_2_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/quest_2"
+        android:textAlignment="center"
+        android:textColor="@color/color_black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_3"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_2" />
+
+    <TextView
+        android:id="@+id/quest_3_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/quest_3"
+        android:textAlignment="center"
+        android:textColor="@color/color_black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_4"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_3" />
+
+    <TextView
+        android:id="@+id/quest_4_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/quest_4"
+        android:textAlignment="center"
+        android:textColor="@color/color_black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_5"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_4" />
+
+    <TextView
+        android:id="@+id/quest_5_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+
+        android:layout_marginBottom="8dp"
+        android:text="Quest 5"
+        android:textAlignment="center"
+        android:textColor="@color/color_black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_6"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_5" />
+
+    <Spinner
+        android:id="@+id/spinner_quest_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_2"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_1" />
+
+    <Spinner
+        android:id="@+id/spinner_quest_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_3"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_2" />
+
+    <Spinner
+        android:id="@+id/spinner_quest_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_4"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_3" />
+
+    <Spinner
+        android:id="@+id/spinner_quest_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_5"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_4" />
+
+    <Spinner
+        android:id="@+id/spinner_quest_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_6"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_5" />
+
+    <Button
+        android:id="@+id/quest_done_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:background="@drawable/button_style"
+        android:text="@string/done"
+        android:textColor="@color/text_button_color"
+
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_6" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_spinner_constraint_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_spinner_constraint_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_spinner_constraint_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_spinner_constraint_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_spinner_constraint_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_spinner_constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_spinner_constraint_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+</android.support.constraint.ConstraintLayout>
